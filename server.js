@@ -447,7 +447,7 @@ app.get("/account/:user", async (req, res) => {
             }
             
             .shape {
-                width: 30px;
+                width: 20px;
                 float: left:
                 margin-left: 10px;
             }
@@ -571,6 +571,38 @@ app.get("/account/:user", async (req, res) => {
                     <img class="shape" src= ${polygonGalleryImage5}
                     <div>${(data.gallery)}</div>
                     <img class="shape" src= ${polygonGalleryImage6}
+                    <div></div>
+                    <img class="shape" src= ${polygonGalleryImage7}
+                    <div></div>
+                    <img class="shape" src= ${polygonGalleryImage8}
+                    <div></div>
+                    <img class="shape" src= ${polygonGalleryImage9}
+                    <div></div>
+                    <img class="shape" src= ${polygonGalleryImage10}
+                    <div></div>
+                    <img class="shape" src= ${polygonGalleryImage11}
+                    <div></div>
+                    <img class="shape" src= ${polygonGalleryImage12}
+                    <div></div>
+                    <img class="shape" src= ${polygonGalleryImage13}
+                    <div></div>
+                    <img class="shape" src= ${polygonGalleryImage14}
+                    <div></div>
+                    <img class="shape" src= ${polygonGalleryImage15}
+                    <div></div>
+                    <img class="shape" src= ${polygonGalleryImage16}
+                    <div></div>
+                    <img class="shape" src= ${polygonGalleryImage17}
+                    <div></div>
+                    <img class="shape" src= ${polygonGalleryImage18}
+                    <div></div>
+                    <img class="shape" src= ${polygonGalleryImage19}
+                    <div></div>
+                    <img class="shape" src= ${polygonGalleryImage20}
+                    <div></div>
+                    <img class="shape" src= ${polygonGalleryImage21}
+                    <div></div>
+                    <img class="shape" src= ${polygonGalleryImage22}
                 </div>
             </div>
         </div>
