@@ -465,6 +465,12 @@ app.get("/account/:user", async (req, res) => {
                 overflow-y: scroll;
                 z-index: 101;
             }
+            .polygon-gallery {
+                font-size: 20px;
+                max-height: 300px;
+                overflow-y: scroll;
+                z-index: 102;
+            }
         </style>
     </head>
     <body>
