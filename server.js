@@ -571,37 +571,37 @@ app.get("/account/:user", async (req, res) => {
                     <img class="shape" src= ${polygonGalleryImage5}
                     <div>${(data.gallery)}</div>
                     <img class="shape" src= ${polygonGalleryImage6}
-                    <div></div>
+                    <div>${(data.gallery)}</div>
                     <img class="shape" src= ${polygonGalleryImage7}
-                    <div></div>
+                    <div>${(data.gallery)}</div>
                     <img class="shape" src= ${polygonGalleryImage8}
-                    <div></div>
+                    <div>${(data.gallery)}</div>
                     <img class="shape" src= ${polygonGalleryImage9}
-                    <div></div>
+                    <div>${(data.gallery)}</div>
                     <img class="shape" src= ${polygonGalleryImage10}
-                    <div></div>
+                    <div>${(data.gallery)}</div>
                     <img class="shape" src= ${polygonGalleryImage11}
-                    <div></div>
+                    <div>${(data.gallery)}</div>
                     <img class="shape" src= ${polygonGalleryImage12}
-                    <div></div>
+                    <div>${(data.gallery)}</div>
                     <img class="shape" src= ${polygonGalleryImage13}
-                    <div></div>
+                    <div>${(data.gallery)}</div>
                     <img class="shape" src= ${polygonGalleryImage14}
-                    <div></div>
+                    <div>${(data.gallery)}</div>
                     <img class="shape" src= ${polygonGalleryImage15}
-                    <div></div>
+                    <div>${(data.gallery)}</div>
                     <img class="shape" src= ${polygonGalleryImage16}
-                    <div></div>
+                    <div>${(data.gallery)}</div>
                     <img class="shape" src= ${polygonGalleryImage17}
-                    <div></div>
+                    <div>${(data.gallery)}</div>
                     <img class="shape" src= ${polygonGalleryImage18}
-                    <div></div>
+                    <div>${(data.gallery)}</div>
                     <img class="shape" src= ${polygonGalleryImage19}
-                    <div></div>
+                    <div>${(data.gallery)}</div>
                     <img class="shape" src= ${polygonGalleryImage20}
-                    <div></div>
+                    <div>${(data.gallery)}</div>
                     <img class="shape" src= ${polygonGalleryImage21}
-                    <div></div>
+                    <div>${(data.gallery)}</div>
                     <img class="shape" src= ${polygonGalleryImage22}
                 </div>
             </div>
