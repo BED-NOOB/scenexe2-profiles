@@ -425,7 +425,7 @@ app.get("/account/:user", async (req, res) => {
             .shape {
                 width: 30px;
                 float: left:
-                margin-right: 10px;
+                gap: 10px;
             }
 
             .search-input {
