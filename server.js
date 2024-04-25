@@ -273,6 +273,7 @@ app.get("/account/:user", async (req, res) => {
             "https://media.discordapp.net/attachments/1016463628813213838/1233008604320370698/zSwluTn3ru5y05nW1bae0LrasOSqk2PQHotg6Jnge1W3xDUQS2.png?ex=662b883f&is=662a36bf&hm=ca02ffd0d1b51d9a879d7fe1211520c4c56909b886f0c2b51220993c7e83e3ff&=&format=webp&quality=lossless",
             "https://media.discordapp.net/attachments/1016463628813213838/1233008822508060802/I7pK1TN4HdcgefSCh2kyq44VqaDm1jmubcs0Cw22QwlDulu0mi.png?ex=662b8873&is=662a36f3&hm=48f0490d6a991afb15154b04e5fe651680aca7f126f548bc3bdd6f04ba983653&=&format=webp&quality=lossless",
         ]
+        const polygonGalleryImage = polygonGalleryImages[polygonGalleryImages.length];
 		const html = `
     <!DOCTYPE html>
     <html>
@@ -536,7 +537,7 @@ app.get("/account/:user", async (req, res) => {
                 <div class="box-value">
                     <div class="box-title">Polygon Gallery</div>
                     <hr class="hr2">
-                    <img src = "https://media.discordapp.net/attachments/1016463628813213838/1233000250201870386/tE26uAPZZrqfBr6iasi52fvmjkZmaB9GjqFSM0GWpv8FIZELe0.png?ex=662b8077&is=662a2ef7&hm=749fd3989b6301673c105ba52a2c3f0e9cc8e789f35182c3bc92a01ca6da1063&=&format=webp&quality=lossless?size=128",
+                    <img ${polygonGalleryImage}
                     <div>${(data.gallery)}</div>
                 </div>
             </div>
