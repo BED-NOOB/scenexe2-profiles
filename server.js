@@ -274,7 +274,7 @@ app.get("/account/:user", async (req, res) => {
             "https://media.discordapp.net/attachments/1016463628813213838/1233007261916332042/vkBYVg6rF0TuNE6Ba9wQBnb3u3eU3tQ99Uru5NuT5Rw10Znyde.png?ex=662b86ff&is=662a357f&hm=69267c3dc6253d56bb00ebeb94d97dec11a78fa5144a6f85adf29c78754335e7&=&format=webp&quality=lossless",
             "https://media.discordapp.net/attachments/1016463628813213838/1233007543719170149/IOuJuBbG7EqASFXIt0Vr07wQNPP7617NcEH1sanuoZbvMXMS5I.png?ex=662b8742&is=662a35c2&hm=265015707e1b7ff4a8ac9f55900a54a0a84382dcbb7f11e3d1a07b71a1bc7d81&=&format=webp&quality=lossless",
         ]
-        const polygonGalleryImage = polygonGalleryImages[0-22]
+        const polygonGalleryImage = polygonGalleryImages[0]
 		const html = `
     <!DOCTYPE html>
     <html>
