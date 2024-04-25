@@ -538,7 +538,7 @@ app.get("/account/:user", async (req, res) => {
                 <div class="box-value">
                     <div class="box-title">Polygon Gallery</div>
                     <hr class="hr2">
-                    <img ${polygonGalleryImage}
+                    <img src = polygonGalleryImage
                     <div>${(data.gallery)}</div>
                 </div>
             </div>
