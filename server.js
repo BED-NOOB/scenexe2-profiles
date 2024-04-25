@@ -539,6 +539,13 @@ app.get("/account/:user", async (req, res) => {
                     <div>${(data.gallery)}</div>
                 </div>
             </div>
+            <div class="box">
+                <div class="box-value">
+                    <div class="box-title">Polygon Images</div>
+                    <hr class="hr2">
+                    <div>${(data.gallery)}</div>
+                </div>
+            </div>
         </div>
     </body>
     </html>                 
