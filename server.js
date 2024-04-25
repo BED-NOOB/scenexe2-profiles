@@ -574,35 +574,6 @@ app.get("/account/:user", async (req, res) => {
                     <div>${(data.gallery)}</div>
                     <img class="shape" src= ${polygonGalleryImage7}
                     <div>${(data.gallery)}</div>
-                    <img class="shape" src= ${polygonGalleryImage8}
-                    <div>${(data.gallery)}</div>
-                    <img class="shape" src= ${polygonGalleryImage9}
-                    <div>${(data.gallery)}</div>
-                    <img class="shape" src= ${polygonGalleryImage10}
-                    <div>${(data.gallery)}</div>
-                    <img class="shape" src= ${polygonGalleryImage11}
-                    <div>${(data.gallery)}</div>
-                    <img class="shape" src= ${polygonGalleryImage12}
-                    <div>${(data.gallery)}</div>
-                    <img class="shape" src= ${polygonGalleryImage13}
-                    <div>${(data.gallery)}</div>
-                    <img class="shape" src= ${polygonGalleryImage14}
-                    <div>${(data.gallery)}</div>
-                    <img class="shape" src= ${polygonGalleryImage15}
-                    <div>${(data.gallery)}</div>
-                    <img class="shape" src= ${polygonGalleryImage16}
-                    <div>${(data.gallery)}</div>
-                    <img class="shape" src= ${polygonGalleryImage17}
-                    <div>${(data.gallery)}</div>
-                    <img class="shape" src= ${polygonGalleryImage18}
-                    <div>${(data.gallery)}</div>
-                    <img class="shape" src= ${polygonGalleryImage19}
-                    <div>${(data.gallery)}</div>
-                    <img class="shape" src= ${polygonGalleryImage20}
-                    <div>${(data.gallery)}</div>
-                    <img class="shape" src= ${polygonGalleryImage21}
-                    <div>${(data.gallery)}</div>
-                    <img class="shape" src= ${polygonGalleryImage22}
                 </div>
             </div>
         </div>
