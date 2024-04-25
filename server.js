@@ -140,7 +140,7 @@ app.get('/callback', async (req, res) => {
                 };               //YOU NEED TO HARDCODE THIS ONE
                 const database = 'http://localhost:3000/database';
 
-                const enteredAccountName = prompt('Enter your scenexe2 account name:');
+                const enteredAccountName = prompt('Enter your scenexe2 account name (all lowercase):');
                 if (enteredAccountName) {
                     userDataToSend.user = enteredAccountName;
 
@@ -274,7 +274,31 @@ app.get("/account/:user", async (req, res) => {
             "https://media.discordapp.net/attachments/1016463628813213838/1233007261916332042/vkBYVg6rF0TuNE6Ba9wQBnb3u3eU3tQ99Uru5NuT5Rw10Znyde.png?ex=662b86ff&is=662a357f&hm=69267c3dc6253d56bb00ebeb94d97dec11a78fa5144a6f85adf29c78754335e7&=&format=webp&quality=lossless",
             "https://media.discordapp.net/attachments/1016463628813213838/1233007543719170149/IOuJuBbG7EqASFXIt0Vr07wQNPP7617NcEH1sanuoZbvMXMS5I.png?ex=662b8742&is=662a35c2&hm=265015707e1b7ff4a8ac9f55900a54a0a84382dcbb7f11e3d1a07b71a1bc7d81&=&format=webp&quality=lossless",
         ]
-        const polygonGalleryImage = polygonGalleryImages[0-22]
+        //polyhedra
+        const polygonGalleryImage0 = polygonGalleryImages[0]
+        const polygonGalleryImage1 = polygonGalleryImages[1]
+        const polygonGalleryImage2 = polygonGalleryImages[2]
+        const polygonGalleryImage3 = polygonGalleryImages[3]
+        const polygonGalleryImage4 = polygonGalleryImages[4]
+        //polygons
+        const polygonGalleryImage5 = polygonGalleryImages[5]
+        const polygonGalleryImage6 = polygonGalleryImages[6]
+        const polygonGalleryImage7 = polygonGalleryImages[7]
+        const polygonGalleryImage8 = polygonGalleryImages[8]
+        const polygonGalleryImage9 = polygonGalleryImages[9]
+        const polygonGalleryImage10 = polygonGalleryImages[10]
+        const polygonGalleryImage11 = polygonGalleryImages[11]
+        const polygonGalleryImage12 = polygonGalleryImages[12]
+        const polygonGalleryImage13 = polygonGalleryImages[13]
+        const polygonGalleryImage14 = polygonGalleryImages[14]
+        const polygonGalleryImage15 = polygonGalleryImages[15]
+        const polygonGalleryImage16 = polygonGalleryImages[16]
+        const polygonGalleryImage17 = polygonGalleryImages[17]
+        const polygonGalleryImage18 = polygonGalleryImages[18]
+        const polygonGalleryImage19 = polygonGalleryImages[19]
+        const polygonGalleryImage20 = polygonGalleryImages[20]
+        const polygonGalleryImage21 = polygonGalleryImages[21]
+        const polygonGalleryImage22 = polygonGalleryImages[22]
 		const html = `
     <!DOCTYPE html>
     <html>
@@ -544,7 +568,11 @@ app.get("/account/:user", async (req, res) => {
                 <div class="box-value">
                     <div class="box-title">Polygon Gallery</div>
                     <hr class="hr2">
-                    <img class="shape" src= ${polygonGalleryImage}
+                    <img class="shape" src= ${polygonGalleryImage0}
+                    <img class="shape" src= ${polygonGalleryImage1}
+                    <img class="shape" src= ${polygonGalleryImage2}
+                    <img class="shape" src= ${polygonGalleryImage3}
+                    <img class="shape" src= ${polygonGalleryImage4}
                     <div>${(data.gallery)}</div>
                 </div>
             </div>
