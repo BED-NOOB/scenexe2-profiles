@@ -465,12 +465,7 @@ app.get("/account/:user", async (req, res) => {
                 overflow-y: scroll;
                 z-index: 101;
             }
-            .polygon-gallery {
-                font-size: 20px;
-                max-height: 300px;
-                overflow-y: scroll;
-                z-index: 102;
-            }
+
         </style>
     </head>
     <body>
@@ -535,6 +530,13 @@ app.get("/account/:user", async (req, res) => {
                     <div class="box-title">Additional Info</div>
                     <hr class="hr2">
                     <div>Polygon Kills: ${formatNumber(data.polygonKills)}</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-value">
+                    <div class="box-title">Additional Info</div>
+                    <hr class="hr2">
+                    <div>Polygon Gallery: ${(data.gallery)}</div>
                 </div>
             </div>
         </div>
