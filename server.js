@@ -248,6 +248,13 @@ app.get("/account/:user", async (req, res) => {
         const background = backgrounds[Math.floor(Math.random() * backgrounds.length)];
         const playercountlist = await playercount();
         const polygonGalleryImages = [
+            //polyhedra
+            "https://media.discordapp.net/attachments/1016463628813213838/1233008159631872040/wsrr58A9ieGfw2VvS5P3LW1EniaDgaht2DAlZyjw3ZSTEy73Ay.png?ex=662b87d5&is=662a3655&hm=ed30c3905c448cb4bed16894330cb69b2aaf1b69f18ed2e280b4bb6c24eb366f&=&format=webp&quality=lossless",
+            "https://media.discordapp.net/attachments/1016463628813213838/1233008281388318841/GuaSwwbqpkmtMt5NyBweN3xqvfpFFZdxqOVw9fNDTojuiUNJEx.png?ex=662b87f2&is=662a3672&hm=ab0d0881e3cbdc5bbab44d07b137f83147ff47ea4f5b7b3d175a69b5b2ac23e7&=&format=webp&quality=lossless",
+            "https://media.discordapp.net/attachments/1016463628813213838/1233008414473457675/QnPUsfZZdCBCdH4nU0oKOiWrGTtFswhXQQNkrU3urnfOPWlBL7.png?ex=662b8812&is=662a3692&hm=9b9088e43f5dd414021d1a5e1c06b5ee29ed491e7324ac01634b2efdfcc6fd84&=&format=webp&quality=lossless",
+            "https://media.discordapp.net/attachments/1016463628813213838/1233008604320370698/zSwluTn3ru5y05nW1bae0LrasOSqk2PQHotg6Jnge1W3xDUQS2.png?ex=662b883f&is=662a36bf&hm=ca02ffd0d1b51d9a879d7fe1211520c4c56909b886f0c2b51220993c7e83e3ff&=&format=webp&quality=lossless",
+            "https://media.discordapp.net/attachments/1016463628813213838/1233008822508060802/I7pK1TN4HdcgefSCh2kyq44VqaDm1jmubcs0Cw22QwlDulu0mi.png?ex=662b8873&is=662a36f3&hm=48f0490d6a991afb15154b04e5fe651680aca7f126f548bc3bdd6f04ba983653&=&format=webp&quality=lossless",
+            //polygons
             "https://media.discordapp.net/attachments/1016463628813213838/1233000250201870386/tE26uAPZZrqfBr6iasi52fvmjkZmaB9GjqFSM0GWpv8FIZELe0.png?ex=662b8077&is=662a2ef7&hm=749fd3989b6301673c105ba52a2c3f0e9cc8e789f35182c3bc92a01ca6da1063&=&format=webp&quality=lossless",
             "https://media.discordapp.net/attachments/1016463628813213838/1233000856190976051/DpCqtO1b6UJyX2VVQjWAQ8kKgkL7lwuAWIuUbhiXY6ozAlr83z.png?ex=662b8108&is=662a2f88&hm=46d778c61f32ff3504c14e1657c70f32cba7c9f4cef5fce6612e9f4d43dd076b&=&format=webp&quality=lossless",
             "https://media.discordapp.net/attachments/1016463628813213838/1233001044833992714/ybmmhF9bCdPjAQXJKpn9tJxe06UNrRDdcf4Vpi6TQkJ8OVg3dC.png?ex=662b8135&is=662a2fb5&hm=1230e96fa61d4f6d442e146dd03475c0a3c5420f301a9ade54faa80368ce5072&=&format=webp&quality=lossless",
@@ -266,14 +273,8 @@ app.get("/account/:user", async (req, res) => {
             "https://media.discordapp.net/attachments/1016463628813213838/1233007128906563689/438oZiKUrPCk9bBQiF473BT1I88lNAM3SjVto7YhI07egclNpW.png?ex=662b86df&is=662a355f&hm=7229b09d391128aa640fdd8ab97508b4ac3ae28cdd6bf5748b78ee0899afa951&=&format=webp&quality=lossless",
             "https://media.discordapp.net/attachments/1016463628813213838/1233007261916332042/vkBYVg6rF0TuNE6Ba9wQBnb3u3eU3tQ99Uru5NuT5Rw10Znyde.png?ex=662b86ff&is=662a357f&hm=69267c3dc6253d56bb00ebeb94d97dec11a78fa5144a6f85adf29c78754335e7&=&format=webp&quality=lossless",
             "https://media.discordapp.net/attachments/1016463628813213838/1233007543719170149/IOuJuBbG7EqASFXIt0Vr07wQNPP7617NcEH1sanuoZbvMXMS5I.png?ex=662b8742&is=662a35c2&hm=265015707e1b7ff4a8ac9f55900a54a0a84382dcbb7f11e3d1a07b71a1bc7d81&=&format=webp&quality=lossless",
-            //polyhedra
-            "https://media.discordapp.net/attachments/1016463628813213838/1233008159631872040/wsrr58A9ieGfw2VvS5P3LW1EniaDgaht2DAlZyjw3ZSTEy73Ay.png?ex=662b87d5&is=662a3655&hm=ed30c3905c448cb4bed16894330cb69b2aaf1b69f18ed2e280b4bb6c24eb366f&=&format=webp&quality=lossless",
-            "https://media.discordapp.net/attachments/1016463628813213838/1233008281388318841/GuaSwwbqpkmtMt5NyBweN3xqvfpFFZdxqOVw9fNDTojuiUNJEx.png?ex=662b87f2&is=662a3672&hm=ab0d0881e3cbdc5bbab44d07b137f83147ff47ea4f5b7b3d175a69b5b2ac23e7&=&format=webp&quality=lossless",
-            "https://media.discordapp.net/attachments/1016463628813213838/1233008414473457675/QnPUsfZZdCBCdH4nU0oKOiWrGTtFswhXQQNkrU3urnfOPWlBL7.png?ex=662b8812&is=662a3692&hm=9b9088e43f5dd414021d1a5e1c06b5ee29ed491e7324ac01634b2efdfcc6fd84&=&format=webp&quality=lossless",
-            "https://media.discordapp.net/attachments/1016463628813213838/1233008604320370698/zSwluTn3ru5y05nW1bae0LrasOSqk2PQHotg6Jnge1W3xDUQS2.png?ex=662b883f&is=662a36bf&hm=ca02ffd0d1b51d9a879d7fe1211520c4c56909b886f0c2b51220993c7e83e3ff&=&format=webp&quality=lossless",
-            "https://media.discordapp.net/attachments/1016463628813213838/1233008822508060802/I7pK1TN4HdcgefSCh2kyq44VqaDm1jmubcs0Cw22QwlDulu0mi.png?ex=662b8873&is=662a36f3&hm=48f0490d6a991afb15154b04e5fe651680aca7f126f548bc3bdd6f04ba983653&=&format=webp&quality=lossless",
         ]
-        const polygonGalleryImage = polygonGalleryImages[polygonGalleryImages.length];
+        const polygonGalleryImage = polygonGalleryImages[item [data.gallery - 5]];
 		const html = `
     <!DOCTYPE html>
     <html>
