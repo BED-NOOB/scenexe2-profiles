@@ -536,6 +536,7 @@ app.get("/account/:user", async (req, res) => {
                 <div class="box-value">
                     <div class="box-title">Polygon Gallery</div>
                     <hr class="hr2">
+                    <img src = "https://media.discordapp.net/attachments/1016463628813213838/1233000250201870386/tE26uAPZZrqfBr6iasi52fvmjkZmaB9GjqFSM0GWpv8FIZELe0.png?ex=662b8077&is=662a2ef7&hm=749fd3989b6301673c105ba52a2c3f0e9cc8e789f35182c3bc92a01ca6da1063&=&format=webp&quality=lossless",
                     <div>${(data.gallery)}</div>
                 </div>
             </div>
