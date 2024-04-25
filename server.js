@@ -74,6 +74,22 @@ app.post('/database', express.json(), (req, res) => {
     });
 });
 
+app.get('/database', (req, res) => {
+    fs.readFile('database.json', 'utf8', (err, data) => {
+        if (err) {
+            console.error('Error reading database file:', err);
+            return res.status(500).json({ error: 'Error reading database file' });
+        }
+        try {
+            const database = JSON.parse(data);
+            res.json(database);
+        } catch (parseError) {
+            console.error('Error parsing database JSON:', parseError);
+            res.status(500).json({ error: 'Error parsing database JSON' });
+        }
+    });
+});
+
 app.get('/callback', async (req, res) => {
     const code = req.query.code;
     const tokenUrl = 'https://discord.com/api/oauth2/token';
