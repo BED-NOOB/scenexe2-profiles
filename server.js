@@ -421,7 +421,13 @@ app.get("/account/:user", async (req, res) => {
                 background-color: rgba(0, 0, 0, 0.3);
                 padding: 3px 5px;
             }
-    
+            
+            .shape {
+                width: 30px;
+                float: left:
+                margin-right: 5px;
+            }
+
             .search-input {
                 flex-grow: 0;
                 border: none;
@@ -538,7 +544,7 @@ app.get("/account/:user", async (req, res) => {
                 <div class="box-value">
                     <div class="box-title">Polygon Gallery</div>
                     <hr class="hr2">
-                    <img src= ${polygonGalleryImages}
+                    <img class="shape" src= ${polygonGalleryImages}
                     <div>${(data.gallery)}</div>
                 </div>
             </div>
