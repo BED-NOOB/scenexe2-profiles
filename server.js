@@ -637,11 +637,11 @@ app.get("/account/:user", async (req, res) => {
                 <div class="box-value">
                     <div class="box-title">Polygon Gallery</div>
                     <hr class="hr2">
-                    <p> class="polygonGalleryText" Radiant: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9<p>
+                    <p>Radiant: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9<p>
                     <img class="shape" src= ${polygonGalleryImage5}
-                    <div> class="polygonGalleryText" ${(reversedArray[5])}</div>
+                    <div>${(reversedArray[5])}</div>
                     <img class="shape" src= ${polygonGalleryImage6}
-                    <div> class="polygonGalleryText" ${(reversedArray[6])}</div>
+                    <div>${(reversedArray[6])}</div>
                 </div>
             </div>
         </div>
