@@ -544,7 +544,7 @@ app.get("/account/:user", async (req, res) => {
                 border: solid 2px black;
                 border-radius: 5px;
                 padding: 20px;
-                margin-top: 0px;
+                margin-top: 20px;
                 font-size: 25px;
                 z-index: 100;
             }
