@@ -343,18 +343,16 @@ app.get("/account/:user", async (req, res) => {
 
         //I asked AI for something and it worked. Spent 1 hour for nothing ._.
         function reverseBinary(binaryGalleryNotReversed) {
-            let reversedGallery = binaryGalleryNotReversed.split('').reverse().join('');
-            let originalCommas = binaryGalleryNotReversed.split('').map((char, index) => char === ',' ? index : -1).filter(index => index !== -1);
-            for (let i = 0; i < originalCommas.length; i++) {
-                reversedGallery = reversedGallery.substring(0, originalCommas[i]) + ',' + reversedGallery.substring(originalCommas[i]);
-            }
-            return reversedGallery;
+            let binaryGallery = binaryGalleryNotReversed.split(',');
+            let reversedGallery = binaryGallery.map(binaryString => binaryString.split('').reverse().join(''));
+            return reversedGallery.join(',');
         }
         
         let binaryGalleryNotReversed = binaryGalleryFinal;
         let reversedGallery = reverseBinary(binaryGalleryNotReversed);
         
         console.log(data.username + "(REVERSED)" + ":" + "[" + reversedGallery + "]");  
+        
         
 		const html = `
     <!DOCTYPE html>
