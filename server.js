@@ -9,6 +9,7 @@ const https = require("https");
 const crypto = require('crypto');
 const session = require('express-session');
 const { URLSearchParams } = require('url');
+const { Console } = require("console");
 
 const app = express();
 const port = 3000;
@@ -299,6 +300,21 @@ app.get("/account/:user", async (req, res) => {
         const polygonGalleryImage20 = polygonGalleryImages[20]
         const polygonGalleryImage21 = polygonGalleryImages[21]
         const polygonGalleryImage22 = polygonGalleryImages[22]
+
+        function convertToBinary(inputGallery) {
+            let binaryGallery = [];
+            for (let i = 0; i < inputGallery.length; i++) {
+                let number = inputGallery[i];
+                let binaryNumber = number.toString(2);
+                binaryGallery.push(binaryNumber);
+            }
+            return binaryGallery;
+        }
+        
+        let inputGallery = [data.gallery[0]];
+        
+        let binaryGalleryFinal = convertToBinary(inputGallery);
+        console.log(binaryGalleryFinal)
 		const html = `
     <!DOCTYPE html>
     <html>
@@ -573,7 +589,7 @@ app.get("/account/:user", async (req, res) => {
                     <img class="shape" src= ${polygonGalleryImage6}
                     <div>${(data.gallery)}</div>
                     <img class="shape" src= ${polygonGalleryImage8}
-                    <div>${(data.gallery)}</div>
+                    <div>${(data.gallery)}
                 </div>
             </div>
         </div>
