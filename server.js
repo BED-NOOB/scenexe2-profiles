@@ -359,8 +359,7 @@ app.get("/account/:user", async (req, res) => {
         
         let originalArray = binaryGalleryFinal;
         let reversedArray = reverseNumInArray(originalArray);
-        console.log(reversedArray);
-        console.log(data.username + "(REVERSED)" + ":" + "[" + reversedGallery.join(',') + "]");
+        console.log(data.username + "(REVERSED)" + ":" + "[" + reversedArray.join(',') + "]");
         
 		const html = `
     <!DOCTYPE html>
