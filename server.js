@@ -341,17 +341,20 @@ app.get("/account/:user", async (req, res) => {
         let binaryGalleryFinal = convertToBinary(inputGallery);
         console.log(data.username + ":" +  "[" + [binaryGalleryFinal] + "]");
 
+        //I asked AI for something and it worked. Spent 1 hour for nothing ._.
         function reverseBinary(binaryGalleryNotReversed) {
-            let reversedGallery = "";
-            for (let i = binaryGalleryNotReversed.length - 1; i >= 0; i--) {
-                reversedGallery += binaryGalleryNotReversed[i];
+            let reversedGallery = binaryGalleryNotReversed.split('').reverse().join('');
+            let originalCommas = binaryGalleryNotReversed.split('').map((char, index) => char === ',' ? index : -1).filter(index => index !== -1);
+            for (let i = 0; i < originalCommas.length; i++) {
+                reversedGallery = reversedGallery.substring(0, originalCommas[i]) + ',' + reversedGallery.substring(originalCommas[i]);
             }
             return reversedGallery;
         }
         
-        let binaryString = binaryGalleryFinal;
-        let reversedGallery = reverseBinary(binaryString);
-        console.log(data.username + "(REVERSED)" + ":" + "[" + reversedGallery.split('').join(',') + "]");  
+        let binaryGalleryNotReversed = binaryGalleryFinal;
+        let reversedGallery = reverseBinary(binaryGalleryNotReversed);
+        
+        console.log(data.username + "(REVERSED)" + ":" + "[" + reversedGallery + "]");  
         
 		const html = `
     <!DOCTYPE html>
