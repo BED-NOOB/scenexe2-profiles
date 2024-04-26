@@ -642,6 +642,8 @@ app.get("/account/:user", async (req, res) => {
                     <div>${(reversedArray[5])}</div>
                     <img class="shape" src= ${polygonGalleryImage6}
                     <div>${(reversedArray[6])}</div>
+                    <img class="shape" src= ${polygonGalleryImage7}
+                    <div>${(reversedArray[7])}</div>
                 </div>
             </div>
         </div>
