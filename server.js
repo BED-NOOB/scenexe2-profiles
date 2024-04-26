@@ -311,7 +311,7 @@ app.get("/account/:user", async (req, res) => {
             return binaryGallery;
         }
         
-        let inputGallery = [(data.gallery[0]), (data.gallery[1]), (data.gallery[2]),];
+        let inputGallery = [(data.gallery[0]), (data.gallery[1]), (data.gallery[2]), (data.gallery[3]), (data.gallery[4]), (data.gallery[5]),];
         
         let binaryGalleryFinal = convertToBinary(inputGallery);
         console.log(binaryGalleryFinal);
