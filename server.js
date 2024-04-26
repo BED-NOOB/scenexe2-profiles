@@ -509,8 +509,8 @@ app.get("/account/:user", async (req, res) => {
             }
             
             .shape {
-                width: 50px;
-                height: 50px;
+                width: 25px;
+                height: 25px;
                 float: left:
                 margin-left: 10px;
             }
