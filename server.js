@@ -561,6 +561,12 @@ app.get("/account/:user", async (req, res) => {
                 z-index: 101;
             }
 
+            .polygonGalleryText {
+                font-size: 20px;
+                max-height: 300px;
+                overflow-y: scroll;
+                z-index: 101;
+            }
         </style>
     </head>
     <body>
@@ -631,11 +637,11 @@ app.get("/account/:user", async (req, res) => {
                 <div class="box-value">
                     <div class="box-title">Polygon Gallery</div>
                     <hr class="hr2">
-                    <p>Radiant: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9<p>
+                    <p> class="polygonGalleryText" Radiant: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9<p>
                     <img class="shape" src= ${polygonGalleryImage5}
-                    <div>${(reversedArray[5])}</div>
+                    <div> class="polygonGalleryText" ${(reversedArray[5])}</div>
                     <img class="shape" src= ${polygonGalleryImage6}
-                    <div>${(reversedArray[6])}</div>
+                    <div> class="polygonGalleryText" ${(reversedArray[6])}</div>
                 </div>
             </div>
         </div>
