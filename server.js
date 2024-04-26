@@ -512,7 +512,6 @@ app.get("/account/:user", async (req, res) => {
                 width: 25px;
                 height: 25px;
                 float: left:
-                margin-right: 15px;
             }
 
             .search-input {
@@ -561,12 +560,6 @@ app.get("/account/:user", async (req, res) => {
                 z-index: 101;
             }
 
-            .polygonGalleryText {
-                font-size: 20px;
-                max-height: 300px;
-                overflow-y: scroll;
-                z-index: 101;
-            }
         </style>
     </head>
     <body>
