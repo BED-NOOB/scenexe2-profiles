@@ -303,7 +303,8 @@ app.get("/account/:user", async (req, res) => {
 
         function convertToBinary(inputGallery) {
             let binaryGallery = [];
-            for (let i = 0; i < data.Gallery.length; i++) {
+            let galleryLength = data.gallery.length
+            for (let i = 0; i < galleryLength; i++) {
                 let number = inputGallery[i];
                 let binaryNumber = number.toString(2);
                 binaryGallery.push(binaryNumber);
