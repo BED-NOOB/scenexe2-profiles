@@ -312,33 +312,34 @@ app.get("/account/:user", async (req, res) => {
         }
         
         let inputGallery = [
-        (data.gallery[0]), 
-        (data.gallery[1]), 
-        (data.gallery[2]), 
-        (data.gallery[3]), 
-        (data.gallery[4]), 
-        (data.gallery[5]), 
-        (data.gallery[6]), 
-        (data.gallery[7]), 
-        (data.gallery[8]), 
-        (data.gallery[9]), 
-        (data.gallery[10]), 
-        (data.gallery[11]), 
-        (data.gallery[12]), 
-        (data.gallery[13]), 
-        /*/(data.gallery[14]), 
-        (data.gallery[15]),
-        (data.gallery[16]),
-        (data.gallery[17]),
-        (data.gallery[18]),
-        (data.gallery[19]),
-        (data.gallery[20]),
-        (data.gallery[21]),
-        (data.gallery[22]),/*/
+            (data.gallery[0]), 
+            (data.gallery[1]), 
+            (data.gallery[2]), 
+            (data.gallery[3]), 
+            (data.gallery[4]), 
+            (data.gallery[5]), 
+            (data.gallery[6]), 
+            (data.gallery[7]), 
+            (data.gallery[8]), 
+            (data.gallery[9]), 
+            (data.gallery[10]), 
+            (data.gallery[11]), 
+            (data.gallery[12]), 
+            (data.gallery[13]), 
+            (data.gallery[14]), 
+            (data.gallery[15]),
+            (data.gallery[16]),
+            (data.gallery[17]),
+            (data.gallery[18]),
+            (data.gallery[19]),
+            (data.gallery[20]),
+            (data.gallery[21]),
+            (data.gallery[22])
         ];
         
         let binaryGalleryFinal = convertToBinary(inputGallery);
         console.log(binaryGalleryFinal);
+        
 
 		const html = `
     <!DOCTYPE html>
