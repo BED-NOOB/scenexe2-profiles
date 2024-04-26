@@ -339,7 +339,7 @@ app.get("/account/:user", async (req, res) => {
         ];
         
         let binaryGalleryFinal = convertToBinary(inputGallery);
-        console.log(data.username + ":" + [binaryGalleryFinal]);
+        console.log(data.username + ":" +  "[" + [binaryGalleryFinal] + "]");
         
 
 		const html = `
