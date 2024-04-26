@@ -512,7 +512,7 @@ app.get("/account/:user", async (req, res) => {
                 width: 25px;
                 height: 25px;
                 float: left:
-                margin-left: 10px;
+                margin-right: 15px;
             }
 
             .search-input {
@@ -644,6 +644,7 @@ app.get("/account/:user", async (req, res) => {
                     <div>${(reversedArray[6])}</div>
                     <img class="shape" src= ${polygonGalleryImage7}
                     <div>${(reversedArray[7])}</div>
+                    <div></div>
                 </div>
             </div>
         </div>
