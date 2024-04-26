@@ -341,11 +341,25 @@ app.get("/account/:user", async (req, res) => {
         let binaryGalleryFinal = convertToBinary(inputGallery);
         console.log(data.username + ":" +  "[" + [binaryGalleryFinal] + "]");
 
-        function reverseBinary(binaryGallery) {
-            return number (`${binaryGallery}`.split("").reverse().join(""));
-         }
-         let binaryGallery = binaryGalleryFinal
-         let reversedGallery = reverseBinary(binaryGallery)
+        function reverseNumInArray(arr) {
+            let reversedArray = [];
+        
+            for (let num of arr) {
+                let numStr = num.toString();
+                
+                let reversedNumStr = numStr.split('').reverse().join('');
+                
+                let reversedNum = parseInt(reversedNumStr);
+        
+                reversedArray.push(reversedNum);
+            }
+        
+            return reversedArray;
+        }
+        
+        let originalArray = binaryGalleryFinal;
+        let reversedArray = reverseNumInArray(originalArray);
+        console.log(reversedArray);
         console.log(data.username + "(REVERSED)" + ":" + "[" + reversedGallery.join(',') + "]");
         
 		const html = `
