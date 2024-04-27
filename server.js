@@ -523,7 +523,6 @@ app.get("/account/:user", async (req, res) => {
             .shape {
                 width: 25px;
                 height: 25px;
-                float: left;
             }
 
             .shape-container {
@@ -655,15 +654,15 @@ app.get("/account/:user", async (req, res) => {
                     <hr class="hr2">
                     <div></div>
                     <div>
-                        <img class="shape" src= ${polygonGalleryImage5} alt="Triangle">
+                        <img class="shape-container" src= ${polygonGalleryImage5} alt="Triangle">
                         <div>${(reversedArray[5])}</div>
                     </div>
                     <div>
-                        <img class="shape" src= ${polygonGalleryImage6} alt="Square">
+                        <img class="shape-container" src= ${polygonGalleryImage6} alt="Square">
                         <div>${(reversedArray[6])}</div>
                     </div>
                     <div>
-                        <img class="shape" src= ${polygonGalleryImage7} alt="Pentagon">
+                        <img class="shape-container" src= ${polygonGalleryImage7} alt="Pentagon">
                         <div>${(reversedArray[7])}</div>
                     </div>
                     <div>
