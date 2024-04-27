@@ -362,7 +362,7 @@ app.get("/account/:user", async (req, res) => {
         console.log(data.username + "(REVERSED)" + ":" + "[" + reversedArray.join(',') + "]");
 
         function replaceUndefinedShapes(array) {
-            for (let i = 0; i < array.length; i++) {
+            for (let i = 0; i < 23; i++) {
                 if (array[i] === undefined || isNaN(array[i]) || array[i] === 0) {
                     array[i] = "Undiscovered";
                 }
@@ -645,7 +645,7 @@ app.get("/account/:user", async (req, res) => {
                     <hr class="hr2">
                     <div> </div>
                     <img class="shape" src= ${polygonGalleryImage5} alt="Triangle">
-                    <p>${(reversedArray[5])}</p>
+                    <div>${(reversedArray[5])}</div>
                     <img class="shape" src= ${polygonGalleryImage6} alt="Square">
                     <div>${(reversedArray[6])}</div>
                     <img class="shape" src= ${polygonGalleryImage7} alt="Pentagon">
