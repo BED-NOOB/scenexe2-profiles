@@ -360,6 +360,18 @@ app.get("/account/:user", async (req, res) => {
         let originalArray = binaryGalleryFinal;
         let reversedArray = reverseNumInArray(originalArray);
         console.log(data.username + "(REVERSED)" + ":" + "[" + reversedArray.join(',') + "]");
+
+        function replaceUndefinedShapes(array) {
+            for (let i = 0; i < array.length; i++) {
+                if (array[i] === undefined || array[i] === 0) {
+                    array[i] = "Undiscovered";
+                }
+            }
+            return array;
+        }
+        
+        let inputGalleryWithUndefined = reversedArray;
+        let fixedGallery = replaceUndefinedShapes(inputGalleryWithUndefined);
         
 		const html = `
     <!DOCTYPE html>
