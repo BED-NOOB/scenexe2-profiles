@@ -363,7 +363,7 @@ app.get("/account/:user", async (req, res) => {
 
         function replaceUndefinedShapes(array) {
             for (let i = 0; i < array.length; i++) {
-                if (array[i] === undefined || array[i] === 0) {
+                if (array[i] === undefined || isNaN(array[i]) || array[i] === 0) {
                     array[i] = "Undiscovered";
                 }
             }
@@ -523,12 +523,7 @@ app.get("/account/:user", async (req, res) => {
             .shape {
                 width: 25px;
                 height: 25px;
-                display: inline;
-            }
-
-            .inlineText {
-                margin-right: 5px
-                display: inline;
+                float: left;
             }
 
             .search-input {
@@ -650,7 +645,7 @@ app.get("/account/:user", async (req, res) => {
                     <hr class="hr2">
                     <div> </div>
                     <img class="shape" src= ${polygonGalleryImage5} alt="Triangle">
-                    <div><span class="inlineText">${(reversedArray[5])}</span></div>
+                    <p>${(reversedArray[5])}</p>
                     <img class="shape" src= ${polygonGalleryImage6} alt="Square">
                     <div>${(reversedArray[6])}</div>
                     <img class="shape" src= ${polygonGalleryImage7} alt="Pentagon">
