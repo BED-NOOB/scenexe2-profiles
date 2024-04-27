@@ -529,6 +529,8 @@ app.get("/account/:user", async (req, res) => {
                 display: flex;
                 flex-direction: column;
                 align-items: left;
+                width: 25px;
+                height: 25px;
             }
             
             .shape-container > div {
