@@ -525,18 +525,6 @@ app.get("/account/:user", async (req, res) => {
                 height: 25px;
             }
 
-            .shape-container {
-                display: flex;
-                flex-direction: column;
-                align-items: left;
-                width: 25px;
-                height: 25px;
-            }
-            
-            .shape-container > div {
-                margin-bottom: 12.5px;
-            }
-
             .search-input {
                 flex-grow: 0;
                 border: none;
@@ -655,98 +643,52 @@ app.get("/account/:user", async (req, res) => {
                     <p>Radiant: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9<p>
                     <hr class="hr2">
                     <div></div>
-                    <div>
-                        <img class="shape-container" src= ${polygonGalleryImage5} alt="Triangle">
-                        <div>${(reversedArray[5])}</div>
-                    </div>
-                    <div>
-                        <img class="shape-container" src= ${polygonGalleryImage6} alt="Square">
-                        <div>${(reversedArray[6])}</div>
-                    </div>
-                    <div>
-                        <img class="shape-container" src= ${polygonGalleryImage7} alt="Pentagon">
-                        <div>${(reversedArray[7])}</div>
-                    </div>
-                    <div>
-                        <img class="shape" src= ${polygonGalleryImage8} alt="Hexagon">
-                        <div>${(reversedArray[8])}</div>
-                    </div>
-                    <div>
-                        <img class="shape" src= ${polygonGalleryImage9} alt="Heptagon">
-                        <div>${(reversedArray[9])}</div>
-                    </div>
-                    <div>
-                        <img class="shape" src= ${polygonGalleryImage10} alt="Octagon">
-                        <div>${(reversedArray[10])}</div>
-                    </div>
-                    <div>
-                        <img class="shape" src= ${polygonGalleryImage11} alt="Nonagon">
-                        <div>${(reversedArray[11])}</div>
-                    </div>
-                    <div>
-                        <img class="shape" src= ${polygonGalleryImage12} alt="Decagon">
-                        <div>${(reversedArray[12])}</div>
-                    </div>
-                    <div>
-                        <img class="shape" src= ${polygonGalleryImage13} alt="Hendecagon">
-                        <div>${(reversedArray[13])}</div>
-                    </div>
-                    <div>
-                        <img class="shape" src= ${polygonGalleryImage14} alt="Dodecagon">
-                        <div>${(reversedArray[14])}</div>
-                    </div>
-                    <div>
-                        <img class="shape" src= ${polygonGalleryImage15} alt="Tridecagon">
-                        <div>${(reversedArray[15])}</div>
-                    </div>
-                    <div>
-                        <img class="shape" src= ${polygonGalleryImage16} alt="Tetradecagon">
-                        <div>${(reversedArray[16])}</div>
-                    </div>
-                    <div>
-                        <img class="shape" src= ${polygonGalleryImage17} alt="Pentadecagon">
-                        <div>${(reversedArray[17])}</div>
-                    </div>
-                    <div>
-                        <img class="shape" src= ${polygonGalleryImage18} alt="Hexadecagon">
-                        <div>${(reversedArray[18])}</div>
-                    </div>
-                    <div>
-                        <img class="shape" src= ${polygonGalleryImage19} alt="Heptadecagon">
-                        <div>${(reversedArray[19])}</div>
-                    </div>
-                    <div>
-                        <img class="shape" src= ${polygonGalleryImage20} alt="Octadecagon">
-                        <div>${(reversedArray[20])}</div>
-                    </div>
-                    <div>
-                        <img class="shape" src= ${polygonGalleryImage21} alt="Enneadecagon">
-                        <div>${(reversedArray[21])}</div>
-                    </div>
-                    <div>
-                        <img class="shape" src= ${polygonGalleryImage22} alt="Icosagon">
-                        <div>${(reversedArray[22])}</div>
-                    </div>
-                    <div>
+                    <img class="shape" src= ${polygonGalleryImage5} alt="Triangle">
+                    <div>${(reversedArray[5])}</div>
+                    <img class="shape" src= ${polygonGalleryImage6} alt="Square">
+                    <div>${(reversedArray[6])}</div>
+                    <img class="shape" src= ${polygonGalleryImage7} alt="Pentagon">
+                    <div>${(reversedArray[7])}</div>
+                    <img class="shape" src= ${polygonGalleryImage8} alt="Hexagon">
+                    <div>${(reversedArray[8])}</div>
+                    <img class="shape" src= ${polygonGalleryImage9} alt="Heptagon">
+                    <div>${(reversedArray[9])}</div>
+                    <img class="shape" src= ${polygonGalleryImage10} alt="Octagon">
+                    <div>${(reversedArray[10])}</div>
+                    <img class="shape" src= ${polygonGalleryImage11} alt="Nonagon">
+                    <div>${(reversedArray[11])}</div>
+                    <img class="shape" src= ${polygonGalleryImage12} alt="Decagon">
+                    <div>${(reversedArray[12])}</div>
+                    <img class="shape" src= ${polygonGalleryImage13} alt="Hendecagon">
+                    <div>${(reversedArray[13])}</div>
+                    <img class="shape" src= ${polygonGalleryImage14} alt="Dodecagon">
+                    <div>${(reversedArray[14])}</div>
+                    <img class="shape" src= ${polygonGalleryImage15} alt="Tridecagon">
+                    <div>${(reversedArray[15])}</div>
+                    <img class="shape" src= ${polygonGalleryImage16} alt="Tetradecagon">
+                    <div>${(reversedArray[16])}</div>
+                    <img class="shape" src= ${polygonGalleryImage17} alt="Pentadecagon">
+                    <div>${(reversedArray[17])}</div>
+                    <img class="shape" src= ${polygonGalleryImage18} alt="Hexadecagon">
+                    <div>${(reversedArray[18])}</div>
+                    <img class="shape" src= ${polygonGalleryImage19} alt="Heptadecagon">
+                    <div>${(reversedArray[19])}</div>
+                    <img class="shape" src= ${polygonGalleryImage20} alt="Octadecagon">
+                    <div>${(reversedArray[20])}</div>
+                    <img class="shape" src= ${polygonGalleryImage21} alt="Enneadecagon">
+                    <div>${(reversedArray[21])}</div>
+                    <img class="shape" src= ${polygonGalleryImage22} alt="Icosagon">
+                    <div>${(reversedArray[22])}</div>
                     <img class="shape" src= ${polygonGalleryImage0} alt="Tetrahedron">
                     <div>${(reversedArray[0])}</div>
-                    </div>
-                    <div>
-                        <img class="shape" src= ${polygonGalleryImage1} alt="Cube">
-                        <div>${(reversedArray[1])}</div>
-                    </div>
-                    <div>
-                        <img class="shape" src= ${polygonGalleryImage2} alt="Octahedron">
-                        <div>${(reversedArray[2])}</div>
-                    </div>
-                    <div>
-                        <img class="shape" src= ${polygonGalleryImage3} alt="Dodecahedron">
-                        <div>${(reversedArray[3])}</div>
-                    </div>
-                    <div>
+                    <img class="shape" src= ${polygonGalleryImage1} alt="Cube">
+                    <div>${(reversedArray[1])}</div>
+                    <img class="shape" src= ${polygonGalleryImage2} alt="Octahedron">
+                    <div>${(reversedArray[2])}</div>
+                    <img class="shape" src= ${polygonGalleryImage3} alt="Dodecahedron">
+                    <div>${(reversedArray[3])}</div>
                     <img class="shape" src= ${polygonGalleryImage4} alt="Icosahedron">
                     <div>${(reversedArray[4])}</div>
-                    </div>
                 </div>
             </div>
         </div>
