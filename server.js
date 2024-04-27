@@ -523,7 +523,12 @@ app.get("/account/:user", async (req, res) => {
             .shape {
                 width: 25px;
                 height: 25px;
-                float: left:
+                display: inline;
+            }
+
+            .inlineText {
+                margin-right: 5px
+                display: inline;
             }
 
             .search-input {
@@ -645,7 +650,7 @@ app.get("/account/:user", async (req, res) => {
                     <hr class="hr2">
                     <div> </div>
                     <img class="shape" src= ${polygonGalleryImage5} alt="Triangle">
-                    <div>${(reversedArray[5])}</div>
+                    <div><span class="inlineText">${(reversedArray[5])}</span></div>
                     <img class="shape" src= ${polygonGalleryImage6} alt="Square">
                     <div>${(reversedArray[6])}</div>
                     <img class="shape" src= ${polygonGalleryImage7} alt="Pentagon">
