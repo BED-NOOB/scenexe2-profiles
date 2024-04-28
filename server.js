@@ -377,6 +377,9 @@ app.get("/account/:user", async (req, res) => {
             let result = [];
             for (let k = 0; k < reversedBinaryArray.length; k++) {
                 let reversedBinaryString = reversedBinaryArray[k];
+                if (reversedBinaryString === "Undiscovered") {
+                    continue;
+                }
                 let usefulNumbers = [];
                 let i = 0;
                 for (let j = 0; j < reversedBinaryString.length; j++) {
