@@ -393,7 +393,7 @@ app.get("/account/:user", async (req, res) => {
             return result;
         }
         
-        let displayNumbers = convertReversedBinaryToUsefulStuff([11001, 111101, 110011]);
+        let displayNumbers = convertReversedBinaryToUsefulStuff("11001, 111101, 110011");
         console.log(reversedArray)
         console.log(displayNumbers); 
 		const html = `
