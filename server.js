@@ -392,8 +392,7 @@ app.get("/account/:user", async (req, res) => {
             return result;
         }        
         
-        let usefulNumbers = convertReversedBinaryToUsefulStuff(reversedArray);
-        console.log(usefulNumbers); 
+        console.log(convertReversedBinaryToUsefulStuff(reversedArray)); 
 		const html = `
     <!DOCTYPE html>
     <html>
