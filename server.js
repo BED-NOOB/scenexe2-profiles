@@ -377,21 +377,20 @@ app.get("/account/:user", async (req, res) => {
             let result = [];
             for (let k = 0; k < reversedBinaryArray.length; k++) {
                 let reversedBinaryString = reversedBinaryArray[k];
-                if (typeof reversedBinaryString === 'string' && reversedBinaryString === "Undiscovered") {
-                    continue;
-                }
-                let usefulNumbers = [];
-                let i = 0;
-                for (let j = 0; j < reversedBinaryString.length; j++) {
-                    if (reversedBinaryString[j] === '1') {
-                        usefulNumbers.push(i);
+                if (typeof reversedBinaryString === 'string' && reversedBinaryString !== "Undiscovered") {
+                    let usefulNumbers = [];
+                    let i = 0;
+                    for (let j = 0; j < reversedBinaryString.length; j++) {
+                        if (reversedBinaryString[j] === '1') {
+                            usefulNumbers.push(i);
+                        }
+                        i++;
                     }
-                    i++;
+                    result.push(usefulNumbers);
                 }
-                result.push(usefulNumbers);
             }
             return result;
-        }
+        }        
         
         let usefulNumbers = convertReversedBinaryToUsefulStuff(reversedArray);
         console.log(usefulNumbers); 
