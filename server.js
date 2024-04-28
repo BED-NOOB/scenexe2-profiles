@@ -669,51 +669,51 @@ app.get("/account/:user", async (req, res) => {
                     <hr class="hr2">
                     <div></div>
                     <img class="shape" src= ${polygonGalleryImage5} alt="Triangle">
-                    <div>Radiants: + ${(displayNumbers[5])}</div>
+                    <div>Radiant: ${(displayNumbers[5])}</div>
                     <img class="shape" src= ${polygonGalleryImage6} alt="Square">
-                    <div>${(displayNumbers[6])}</div>
+                    <div>Radiant: ${(displayNumbers[6])}</div>
                     <img class="shape" src= ${polygonGalleryImage7} alt="Pentagon">
-                    <div>${(displayNumbers[7])}</div>
+                    <div>Radiant: ${(displayNumbers[7])}</div>
                     <img class="shape" src= ${polygonGalleryImage8} alt="Hexagon">
-                    <div>${(displayNumbers[8])}</div>
+                    <div>Radiant: ${(displayNumbers[8])}</div>
                     <img class="shape" src= ${polygonGalleryImage9} alt="Heptagon">
-                    <div>${(displayNumbers[9])}</div>
+                    <div>Radiant: ${(displayNumbers[9])}</div>
                     <img class="shape" src= ${polygonGalleryImage10} alt="Octagon">
-                    <div>${(displayNumbers[10])}</div>
+                    <div>Radiant: ${(displayNumbers[10])}</div>
                     <img class="shape" src= ${polygonGalleryImage11} alt="Nonagon">
-                    <div>${(displayNumbers[11])}</div>
+                    <div>Radiant: ${(displayNumbers[11])}</div>
                     <img class="shape" src= ${polygonGalleryImage12} alt="Decagon">
-                    <div>${(displayNumbers[12])}</div>
+                    <div>Radiant: ${(displayNumbers[12])}</div>
                     <img class="shape" src= ${polygonGalleryImage13} alt="Hendecagon">
-                    <div>${(displayNumbers[13])}</div>
+                    <div>Radiant: ${(displayNumbers[13])}</div>
                     <img class="shape" src= ${polygonGalleryImage14} alt="Dodecagon">
-                    <div>${(displayNumbers[14])}</div>
+                    <div>Radiant: ${(displayNumbers[14])}</div>
                     <img class="shape" src= ${polygonGalleryImage15} alt="Tridecagon">
-                    <div>${(displayNumbers[15])}</div>
+                    <div>Radiant: ${(displayNumbers[15])}</div>
                     <img class="shape" src= ${polygonGalleryImage16} alt="Tetradecagon">
-                    <div>${(displayNumbers[16])}</div>
+                    <div>Radiant: ${(displayNumbers[16])}</div>
                     <img class="shape" src= ${polygonGalleryImage17} alt="Pentadecagon">
-                    <div>${(displayNumbers[17])}</div>
+                    <div>Radiant: ${(displayNumbers[17])}</div>
                     <img class="shape" src= ${polygonGalleryImage18} alt="Hexadecagon">
-                    <div>${(displayNumbers[18])}</div>
+                    <div>Radiant: ${(displayNumbers[18])}</div>
                     <img class="shape" src= ${polygonGalleryImage19} alt="Heptadecagon">
-                    <div>${(displayNumbers[19])}</div>
+                    <div>Radiant: ${(displayNumbers[19])}</div>
                     <img class="shape" src= ${polygonGalleryImage20} alt="Octadecagon">
-                    <div>${(displayNumbers[20])}</div>
+                    <div>Radiant: ${(displayNumbers[20])}</div>
                     <img class="shape" src= ${polygonGalleryImage21} alt="Enneadecagon">
-                    <div>${(displayNumbers[21])}</div>
+                    <div>Radiant: ${(displayNumbers[21])}</div>
                     <img class="shape" src= ${polygonGalleryImage22} alt="Icosagon">
-                    <div>${(displayNumbers[22])}</div>
+                    <div>Radiant: ${(displayNumbers[22])}</div>
                     <img class="shape" src= ${polygonGalleryImage0} alt="Tetrahedron">
-                    <div>${(displayNumbers[0])}</div>
+                    <div>Radiant: ${(displayNumbers[0])}</div>
                     <img class="shape" src= ${polygonGalleryImage1} alt="Cube">
-                    <div>${(displayNumbers[1])}</div>
+                    <div>Radiant: ${(displayNumbers[1])}</div>
                     <img class="shape" src= ${polygonGalleryImage2} alt="Octahedron">
-                    <div>${(displayNumbers[2])}</div>
+                    <div>Radiant: ${(displayNumbers[2])}</div>
                     <img class="shape" src= ${polygonGalleryImage3} alt="Dodecahedron">
-                    <div>${(displayNumbers[3])}</div>
+                    <div>Radiant: ${(displayNumbers[3])}</div>
                     <img class="shape" src= ${polygonGalleryImage4} alt="Icosahedron">
-                    <div>${(displayNumbers[4])}</div>
+                    <div>Radiant: ${(displayNumbers[4])}</div>
                 </div>
             </div>
         </div>
