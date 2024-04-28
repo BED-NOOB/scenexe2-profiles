@@ -669,7 +669,7 @@ app.get("/account/:user", async (req, res) => {
                     <hr class="hr2">
                     <div></div>
                     <img class="shape" src= ${polygonGalleryImage5} alt="Triangle">
-                    <div>${(displayNumbers[5])}</div>
+                    <div>Radiants: + ${(displayNumbers[5])}</div>
                     <img class="shape" src= ${polygonGalleryImage6} alt="Square">
                     <div>${(displayNumbers[6])}</div>
                     <img class="shape" src= ${polygonGalleryImage7} alt="Pentagon">
