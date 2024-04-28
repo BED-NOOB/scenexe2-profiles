@@ -373,6 +373,25 @@ app.get("/account/:user", async (req, res) => {
         let inputGalleryWithUndefined = reversedArray;
         let fixedGallery = replaceUndefinedShapes(inputGalleryWithUndefined);
         
+        function convertReversedBinaryToUsefulStuff(reversedBinaryArray) {
+            let result = [];
+            for (let k = 0; k < reversedBinaryArray.length; k++) {
+                let reversedBinaryString = reversedBinaryArray[k];
+                let usefulNumbers = [];
+                let i = 0;
+                for (let j = 0; j < reversedBinaryString.length; j++) {
+                    if (reversedBinaryString[j] === '1') {
+                        usefulNumbers.push(i);
+                    }
+                    i++;
+                }
+                result.push(usefulNumbers);
+            }
+            return result;
+        }
+        
+        let displayNumbers = convertReversedBinaryToUsefulStuff(reversedArray);
+        console.log(displayNumbers); 
 		const html = `
     <!DOCTYPE html>
     <html>
