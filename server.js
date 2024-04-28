@@ -375,9 +375,9 @@ app.get("/account/:user", async (req, res) => {
         
         function convertReversedBinaryToUsefulStuff(reversedBinaryArray) {
             let result = [];
+            let undiscoveredIndex = 0;
             for (let k = 0; k < reversedBinaryArray.length; k++) {
                 let reversedBinaryString = reversedBinaryArray[k].toString();
-                console.log("Current element:", reversedBinaryString);
                 if (reversedBinaryString !== "Undiscovered") {
                     let usefulNumbers = [];
                     let i = 0;
@@ -388,12 +388,14 @@ app.get("/account/:user", async (req, res) => {
                         i++;
                     }
                     result.push(usefulNumbers);
+                } else {
+                    result.splice(undiscoveredIndex, 0, ['Undiscovered']);
+                    undiscoveredIndex++;
                 }
+                undiscoveredIndex++;
             }
-            console.log("Result:", result);
             return result;
-        }
-                   
+        }            
         
         console.log(convertReversedBinaryToUsefulStuff(reversedArray)); 
 		const html = `
