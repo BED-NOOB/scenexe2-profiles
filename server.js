@@ -377,9 +377,11 @@ app.get("/account/:user", async (req, res) => {
             let result = [];
             for (let k = 0; k < reversedBinaryArray.length; k++) {
                 let reversedBinaryString = reversedBinaryArray[k];
-                if (reversedBinaryString === "Undiscovered") {
-                    continue;
+                // Check if the element is a string and equal to "Undiscovered"
+                if (typeof reversedBinaryString === 'string' && reversedBinaryString === "Undiscovered") {
+                    continue; // Skip to the next element
                 }
+                // Convert the reversed binary string to useful numbers
                 let usefulNumbers = [];
                 let i = 0;
                 for (let j = 0; j < reversedBinaryString.length; j++) {
